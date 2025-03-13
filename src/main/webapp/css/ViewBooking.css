@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #FFC800;
+}
+
+.btn-danger {
+    background-color: #ff4444;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Search Bar Container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Input Field */
+#searchInput {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background-color: transparent;
+    color: #000000;
+}
+
+#searchInput::placeholder {
+    color: #888;
+}
+
+/* Search Button */
+#searchBtn {
+    background-color: #FFD700; /* Gold color to match the theme */
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #FFC800; /* Slightly darker gold on hover */
+}
+
+/* Icon inside the Search Button */
+#searchBtn i {
+    margin-right: 0.5rem;
+}
